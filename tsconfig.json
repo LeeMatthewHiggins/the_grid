@@ -6,11 +6,6 @@
     "noImplicitAny": false,
     "sourceMap": true,
     "preserveConstEnums":true,
-    "types": [
-      "babylonjs",
-      "babylonjs-gui",
-      "babylonjs-materials"
-    ],
     "lib": [
         "dom",
         "es6"
