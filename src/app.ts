@@ -31,11 +31,17 @@ var createScene = async function () {
   light.intensity = 0.7;
 
   // Our built-in 'sphere' shape.
-  var sphere = MeshBuilder.CreateSphere("sphere", {diameter: 2, segments: 32}, scene);
 
-  // Move the sphere upward 1/2 its height
-  sphere.position.y = 1;
+  var sphereCount = 3;
+  var sphereDiameter = 2;
+  var sphereSpacing = 1;
 
+  for (let index = 0; index < sphereCount; index++) {
+    var sphere = MeshBuilder.CreateSphere("sphere" + index.toString, {diameter: sphereDiameter, segments: 32}, scene);
+    sphere.position.y = 1;
+    sphere.position.x = -(0.5*sphereCount*(sphereDiameter + sphereSpacing)) + (index * (sphereDiameter + sphereSpacing));
+  }
+ 
   const environment = scene.createDefaultEnvironment();
 
   // XR
