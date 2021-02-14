@@ -1,0 +1,31 @@
+{
+  "name": "the_grid",
+  "version": "1.0.0",
+  "description": "VR sandbox",
+  "main": "app.ts",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeeMatthewHiggins/the_grid.git"
+  },
+  "author": "Lee Higgins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeeMatthewHiggins/the_grid/issues"
+  },
+  "homepage": "https://github.com/LeeMatthewHiggins/the_grid#readme",
+  "devDependencies": {
+    "@babylonjs/core": "^4.2.0",
+    "@babylonjs/inspector": "^4.2.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^5.1.0",
+    "ts-loader": "^8.0.17",
+    "typescript": "^4.1.5",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
